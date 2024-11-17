@@ -1,0 +1,20 @@
+python django-admin startproject <new project name>
+cd <new project name>
+python manage.py startapp <app name>
+
+docker compose build --tag <image-name> .
+docker compose run --publish 8000:8000 <image-name>
+
+docker build -t <my-docker-image>
+docker run -d -p 8001:8000 <my-docker-image>
+
+docker rm <my-docker-image>
+docker stop <container id>
+docker ps 
+docker images
+docker kill <container id>
+
+- run with ports and volume maped
+docker run -d -p 8001:8000 -v .:/app my-docker-image
+--interactive mode
+docker run -it -p 8001:8000 -v .:/app my-docker-image bash
