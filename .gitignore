@@ -6,12 +6,23 @@ pip-*.*
 # Distribution / packaging
 /bin
 /env
+
+/venv
+/package
+**/__pycache__/
+**/env/
+**/venv/
+
 /package
 **/env/
+
 **/ENV/
 **/build/
 **/package/
 **/lib/
+
+**/migrations/
+
 
 #compose things
 local*.yml
